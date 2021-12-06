@@ -1,0 +1,21 @@
+[package]
+name = "horizon-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sha2 = "^0.9"
+tokio-native-tls = "^0.3"
+
+[dependencies.tokio]
+version = "^1"
+features = [
+    "rt-multi-thread",
+    "fs",
+    "io-util",
+    "macros",
+    "net",
+    "time",
+]
